@@ -1,0 +1,18 @@
+<h2>Meet our family</h2>
+<ol>
+  <% @members.each do |member| %>
+  <li>
+    <%= member.capitalize
+    %>
+  </li>
+  <% end %>
+</ol>
+
+<form action="/contact" methods="get">
+  <input type="text" name="member"
+    value="<%= params[:member] %>"
+    placeholder="Who are you looking for?">
+  <input type="submit" class="btn btn-primary">
+</form>
+<br>
+<%= link_to "Go back to the homepage", home_path %>
