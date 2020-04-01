@@ -1,0 +1,27 @@
+<%= form_for(@plant) do |p| %>
+  <%= p.label :name %>
+  <%= p.text_field :name %>
+
+  <%= p.label :price %>
+  <%= p.number_field :price %>
+
+  <%= p.label :size %>
+  <%= p.number_field :size %>
+
+  <%= p.label :category %>
+  <%= p.text_field :category %>
+
+  <%= p.label :name %>
+  <%= p.text_field :name %>
+
+  <%= p.label :in_stock %>
+  <%= p.check_box :in_stock %>
+
+  <%= p.label :description %>
+  <%= p.text_field :description %>
+
+  <%= p.label :care %>
+  <%= p.number_field :care %>
+
+  <%= p.submit %>
+<% end %>

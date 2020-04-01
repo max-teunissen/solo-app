@@ -1,0 +1,7 @@
+<ul>
+    <% @plant.each do |plant| %>
+        <li><%= plant.name %></li>
+    <%end%>
+</ul>
+
+<%= link_to "Go back to the homepage", home_path %>
